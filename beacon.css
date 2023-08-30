@@ -1,0 +1,164 @@
+/*Navigation Bar*/
+nav{
+    background-color:beige;
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+nav ul{
+    overflow: hidden;
+}
+ul.navbar li{
+    list-style: none;
+    float: left;
+}
+ul.navbar li.nav-right{
+    float: right;
+}
+ul.navbar li a{
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    display: block;
+    color:darkblue;
+}
+ul.navbar li a:hover{
+    background-color: blue;
+    color: white;
+}
+ul.navbar li.dropdown{
+    display: none;
+}
+/*Section-1*/
+.section1{
+    text-align: center;
+    background-color: lightsteelblue;
+}
+.image{
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 5px;
+}
+img{
+   width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    
+    
+}
+.borderImg{
+    border: 2px solid;
+    padding: 1px;
+    border-color: aliceblue;
+    opacity: 1;
+    border-radius: 10%;
+}
+input[type="text"]{
+    min-width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+}
+button{
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+/*section-2*/
+div.box {
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+    display: block;
+}
+
+
+/*Creating grids*/
+.row{
+    display: flex;
+    width: 100%;
+   
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+    
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33;%}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+p{text-align: center;}
+
+*{
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    
+    padding: 15px;
+    float: left;
+}
+header{text-align: center;}
+label{
+    text-align: center;
+        padding-left: 40%;
+    font-weight: bold;
+}
+header p{
+    font-size: 27;
+    font-family:monospace;
+    font-weight: bold;
+}
+/*Screen-size compartibility*/
+
+@media screen and (max-width: 680px){
+    ul.navbar li:not(:nth-child(1)){
+        display: none;
+    }
+
+
+ul.navbar li.dropdown {
+    display: block;
+    float: right;
+    }
+}
+ul.navbar.responsive li.dropdown{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ul.navbar.responsive{position: relative;
+/*to prevent the navbar from shifting around.*/
+}
+ul.navbar.responsive li{
+   display: inline;
+/*everything grouped together in a row*/
+    float: none;
+}
+ul.navbar.responsive li a{
+    display: block;
+    text-align: left;
+}
+.col-4{
+    display: block;
+    width: 100%;
+    margin: o;
+    
+    
+}
+
+
+
